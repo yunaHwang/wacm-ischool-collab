@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic metadata -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Demo page showing many common HTML tags and concepts.">
+  <meta name="author" content="Your Name">
+
+  <!-- Title & favicon -->
+  <title>HTML Concepts Demo</title>
+  <link rel="icon" href="https://example.com/favicon.ico">
+
+  <!-- Styles (embedded CSS just for demo) -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      line-height: 1.5;
+    }
+    header, nav, main, footer {
+      padding: 1rem;
+    }
+    header, footer {
+      background: #f0f0f0;
+    }
+    nav a {
+      margin-right: 1rem;
+    }
+    section {
+      padding: 1rem;
+      border-bottom: 1px solid #ddd;
+    }
+    .highlight {
+      background: #ffffcc;
+    }
+    table {
+      border-collapse: collapse;
+      margin-top: 0.5rem;
+      width: 100%;
+      max-width: 600px;
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 0.4rem 0.6rem;
+    }
+    th {
+      background: #eee;
+    }
+    code {
+      background: #f9f9f9;
+      padding: 0.1rem 0.2rem;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Page header & navigation -->
+  <header id="top">
+    <h1>HTML Concepts Demo Page</h1>
+    <p>This page demonstrates many basic HTML tags and concepts.</p>
+
+    <nav aria-label="Main navigation">
+      <a href="#text">Text</a>
+      <a href="#lists">Lists</a>
+      <a href="#links-media">Links &amp; Media</a>
+      <a href="#table">Table</a>
+      <a href="#form">Form</a>
+      <a href="#semantic">Semantic Layout</a>
+    </nav>
+  </header>
+
+  <!-- Main content area -->
+  <main>
+
+    <!-- Text & inline formatting -->
+    <section id="text">
+      <h2>Text &amp; Inline Elements</h2>
+
+      <h3>Headings</h3>
+      <p>HTML has six heading levels:</p>
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+      <h6>Heading 6</h6>
+
+      <h3>Paragraphs and Formatting</h3>
+      <p>
+        This is a <strong>paragraph</strong> with some
+        <em>emphasized</em> text, <b>bold</b> text, and
+        <i>italic</i> text.
+      </p>
+      <p>
+        You can also use <mark>mark</mark> to highlight,
+        <small>small text</small>, and <span class="highlight">a span with a CSS class</span>.
+      </p>
+
+      <p>
+        Superscript and subscript: H<sub>2</sub>O and x<sup>2</sup>.
+      </p>
+
+      <h3>Preformatted &amp; Code</h3>
+      <p>Inline code looks like <code>&lt;div&gt;Hello&lt;/div&gt;</code>.</p>
+      <pre><code>
+// Preformatted code block
+function hello() {
+  console.log("Hello, world!");
+}
+      </code></pre>
+
+      <h3>Quotes</h3>
+      <p>Short inline quote: <q>To be or not to be.</q></p>
+
+      <blockquote cite="https://example.com/source">
+        This is a blockquote, often used for longer quotations.
+        <cite>— Famous Person</cite>
+      </blockquote>
+
+      <h3>Abbreviations &amp; Time</h3>
+      <p>
+        The standard for web markup is
+        <abbr title="HyperText Markup Language">HTML</abbr>.
+      </p>
+      <p>
+        The event starts at <time datetime="2025-12-05T10:00">10:00 AM on December 5, 2025</time>.
+      </p>
+    </section>
+
+    <!-- Lists -->
+    <section id="lists">
+      <h2>Lists</h2>
+
+      <h3>Unordered List</h3>
+      <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Cherry</li>
+      </ul>
+
+      <h3>Ordered List</h3>
+      <ol>
+        <li>First step</li>
+        <li>Second step</li>
+        <li>Third step</li>
+      </ol>
+
+      <h3>Description List</h3>
+      <dl>
+        <dt>HTML</dt>
+        <dd>A markup language for structuring web content.</dd>
+        <dt>CSS</dt>
+        <dd>A style sheet language used for describing the presentation of a document.</dd>
+      </dl>
+    </section>
+
+    <!-- Links, images, audio, video -->
+    <section id="links-media">
+      <h2>Links &amp; Media</h2>
+
+      <h3>Links</h3>
+      <p>
+        Visit <a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer">
+        MDN Web Docs</a> for more information about HTML.
+      </p>
+      <p>
+        <a href="#top">Back to top of the page</a>
+      </p>
+
+      <h3>Images</h3>
+      <p>
+        Here is an example image (URL can be replaced with your own):
+      </p>
+      <figure>
+        <img src="https://via.placeholder.com/300x150" alt="Placeholder example image">
+        <figcaption>A simple placeholder image with a caption.</figcaption>
+      </figure>
+
+      <h3>Audio</h3>
+      <audio controls>
+        <source src="example-audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <h3>Video</h3>
+      <video width="320" height="180" controls>
+        <source src="example-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Table -->
+    <section id="table">
+      <h2>Table</h2>
+      <p>A simple table with header, body, and caption:</p>
+
+      <table>
+        <caption>Sample Price Table</caption>
+        <thead>
+          <tr>
+            <th scope="col">Item</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Price ($)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Apples</td>
+            <td>10</td>
+            <td>5.00</td>
+          </tr>
+          <tr>
+            <td>Oranges</td>
+            <td>8</td>
+            <td>4.50</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th scope="row">Total</th>
+            <td>18</td>
+            <td>9.50</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <!-- Form -->
+    <section id="form">
+      <h2>Form Elements</h2>
+
+      <form action="/submit" method="post">
+        <fieldset>
+          <legend>Sign Up</legend>
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+
+          <br><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+          <br><br>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password">
+
+          <br><br>
+
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" min="0" max="120">
+
+          <br><br>
+
+          <label for="color">Favorite color:</label>
+          <input type="color" id="color" name="color">
+
+          <br><br>
+
+          <p>Gender:</p>
+          <label>
+            <input type="radio" name="gender" value="female">
+            Female
+          </label>
+          <label>
+            <input type="radio" name="gender" value="male">
+            Male
+          </label>
+          <label>
+            <input type="radio" name="gender" value="other">
+            Other
+          </label>
+
+          <br><br>
+
+          <p>Interests:</p>
+          <label>
+            <input type="checkbox" name="interests" value="coding">
+            Coding
+          </label>
+          <label>
+            <input type="checkbox" name="interests" value="music">
+            Music
+          </label>
+          <label>
+            <input type="checkbox" name="interests" value="sports">
+            Sports
+          </label>
+
+          <br><br>
+
+          <label for="country">Country:</label>
+          <select id="country" name="country">
+            <option value="">-- select --</option>
+            <option value="us">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="de">Germany</option>
+          </select>
+
+          <br><br>
+
+          <label for="bio">Short bio:</label><br>
+          <textarea id="bio" name="bio" rows="4" cols="40" placeholder="Tell us about yourself"></textarea>
+
+          <br><br>
+
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <!-- Semantic layout & aside -->
+    <section id="semantic">
+      <h2>Semantic Structure</h2>
+
+      <article>
+        <header>
+          <h3>Article Title</h3>
+          <p><small>Posted by <span>Author Name</span></small></p>
+        </header>
+
+        <p>
+          This <code>&lt;article&gt;</code> element represents a self-contained piece of content that could
+          stand on its own, such as a blog post or news story.
+        </p>
+
+        <aside>
+          <h4>Sidebar / Aside</h4>
+          <p>
+            The <code>&lt;aside&gt;</code> element contains related information, like author bio,
+            related links, or ads.
+          </p>
+        </aside>
+
+        <footer>
+          <p><small>Article footer: tags, share buttons, etc.</small></p>
+        </footer>
+      </article>
+
+      <section>
+        <h3>Details &amp; Summary</h3>
+        <details>
+          <summary>Click to expand details</summary>
+          <p>This content is hidden by default and revealed when the user clicks the summary.</p>
+        </details>
+      </section>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year">2025</span> HTML Demo. All rights reserved.</p>
+
+    <!-- Simple script (shows use of <script> tag) -->
+    <script>
+      // Set current year in footer as a tiny JavaScript example
+      document.getElementById('year').textContent = new Date().getFullYear();
+      console.log('HTML concepts demo loaded.');
+    </script>
+  </footer>
+</body>
+</html>
