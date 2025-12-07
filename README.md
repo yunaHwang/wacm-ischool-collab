@@ -6,10 +6,10 @@
 
 ## Possible content ideas
 - 4:00 ~ 4:10pm Settle in, ice-breakers
-- 4:10 ~ 4:30pm Introductions, discussions on html use case and prior experience with website making
-- 4:30pm ~ 4:50pm Rundown of essential html tags (go through ``example.html`` or make another html that is more useful)
-- 4:50pm ~ 5pm Demo: Choose a website and inspect using the Developer tool 
-- 5pm ~ 5:25pm Hands-on Activity: Create a personal website or a Goodreads-like website (maybe more suited for library science students) individually
+- 4:10 ~ 4:20pm Introductions, discussions on html use case and prior experience with website making
+- 4:20pm ~ 4:35pm Rundown of essential html tags (go through ``example.html`` or make another html that is more useful)
+- 4:35pm ~ 4:45pm Demo: Choose a website and inspect using the Developer tool 
+- 4:45pm ~ 5:25pm Hands-on Activity: Create a personal website or a Goodreads-like website (maybe more suited for library science students) individually
 - 5:25pm ~ 5:30pm Showcase, wrap-up
 
 ## Google slides
